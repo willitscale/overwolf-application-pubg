@@ -1,0 +1,41 @@
+{
+  "name": "PUBGistics",
+  "version": "1.0.5",
+  "description": "PUBG statics application for the Overwolf platform",
+  "main": "./dist/main.js",
+  "scripts": {
+    "start": "node index.js",
+    "parse": "node parse.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "james@n3tw0rk.co.uk",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chart.js": "^2.7.52",
+    "@types/chartist": "^0.9.46",
+    "@types/jquery": "^3.3.29",
+    "@types/node": "^11.13.11",
+    "@types/request": "^2.48.1",
+    "bootstrap-sass": "^3.4.1",
+    "bootstrap-scss": "^4.3.1",
+    "browserify": "^16.2.3",
+    "chart.js": "^2.8.0",
+    "chartist": "^0.11.2",
+    "del": "^4.1.1",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-serve": "^1.4.0",
+    "gulp-terser": "^1.2.0",
+    "gulp-typescript": "^5.0.0",
+    "gulp-watch": "^5.0.1",
+    "gulp-zip": "^4.2.0",
+    "jquery": "^3.4.1",
+    "request": "^2.88.0",
+    "tsify": "^4.0.1",
+    "typescript": "^3.4.5",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

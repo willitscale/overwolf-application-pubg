@@ -1,0 +1,27 @@
+@@include('./components/header.html', {"title": "Main", "style": "main"})
+
+<body id="main-page">
+
+    @@include('./components/fixed_windows.html')
+
+    <div class="wrapper">
+
+        <h1 id="logo">PUBG<small>istics</small></h1>
+
+        @@include('./components/sidebar.html')
+        @@include('./components/logged_in.html')
+
+        <div id="content">
+
+            @@include('./tabs/home.html')
+            @@include('./tabs/stats.html')
+            @@include('./tabs/data.html')
+            @@include('./tabs/settings.html')
+
+        </div>
+
+    </div>
+
+    <div id="app-version">VERSION <small></small></div>
+
+    @@include('./components/footer.html', {"page": "main"})

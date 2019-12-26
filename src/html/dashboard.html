@@ -1,0 +1,29 @@
+@@include('./components/header.html', {"title": "Dashboard", "style": "dashboard"})
+
+<body id="dashboard-page">
+
+    @@include('./components/windows.html')
+
+    <div class="wrapper">
+
+        <h1 id="logo">PUBG<small>istics</small></h1>
+
+        @@include('./panels/dashboard/sidebar.html')
+        @@include('./panels/dashboard/loadout.html')
+        @@include('./components/logged_in.html')
+
+        <div id="content">
+
+            <div class="container-fluid dashboard-container">
+
+                @@include('./panels/dashboard/title.html')
+                @@include('./panels/dashboard/activity_graph.html')
+                @@include('./panels/dashboard/phase.html')
+                @@include('./panels/dashboard/game_log.html')
+            </div>
+        </div>
+    </div>
+
+    <div id="app-version">VERSION <small></small></div>
+
+    @@include('./components/footer.html', {"page": "dashboard"})

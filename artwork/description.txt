@@ -1,0 +1,5 @@
+ <h3>PUBGistics - The ultimate PUBG companion!</h3>
+PUBGistics will analyse your previous games to statistically identify you at your best. 
+This app will provide ingame loadout suggestions and track your performance in real time. 
+<br>
+Also, as a recent addition, you can now enable damage markers to show you how much damage you've inflicted to an enemy in realtime!

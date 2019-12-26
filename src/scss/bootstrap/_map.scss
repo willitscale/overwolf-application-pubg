@@ -1,0 +1,13 @@
+
+.map-wrapper {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid $fourth;
+    margin-bottom: 10px;
+  
+    #map-icon {
+      position: absolute;
+      width: 20px;
+      display: none;
+    }
+  }

@@ -1,0 +1,27 @@
+body {
+  font-family: Teko, Roboto, sans-serif;
+  margin: 0px !important;
+  // display: none;
+}
+
+.overlay-stats {
+  text-shadow: 2px 2px black;
+  font-size: 10vw;
+  font-weight: 800;
+  z-index: 3;
+  color: white;
+  display: flex;
+  width: 300px;
+
+  h3 {
+    margin: 0px;
+    padding: 3px 5px;
+    flex-grow: 1;
+    text-align: center;
+    background-color: $third;
+
+    &.kills {
+      color: $kills;
+    }
+  }
+}

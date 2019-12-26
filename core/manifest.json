@@ -1,0 +1,123 @@
+{
+  "manifest_version": 1,
+  "type": "WebApp",
+  "meta": {
+    "name": "PUBGistics",
+    "version": "1.0.5",
+    "minimum-overwolf-version": "0.120.0",
+    "author": "Stevethemagey",
+    "icon": "IconMouseOver.png",
+    "icon_gray": "IconMouseNormal.png",
+    "launcher_icon": "desktop-icon.ico",
+    "description": "Real time stats and gear optimisation"
+  },
+  "permissions": [
+    "FileSystem",
+    "Extensions",
+    "DesktopStreaming",
+    "Hotkeys"
+  ],
+  "data": {
+    "game_targeting": {
+      "type": "dedicated",
+      "game_ids": [10906]
+    },
+    "launch_events": [
+      {
+        "event": "GameLaunch",
+        "event_data": {
+          "game_ids": [10906]
+        },
+        "start_minimized": true
+      }
+    ],
+    "game_events": [
+      10906
+    ],
+    "hotkeys": {
+      "pubgistic_toggle_overlay": {
+        "title": "Show/Hide the in-game overlay",
+        "action-type": "toggle",
+        "default": "Ctrl+H"
+      },
+      "pubgistic_toggle_damage": {
+        "title": "Show/Hide the in-game damage floating text",
+        "action-type": "toggle",
+        "default": "Ctrl+B"
+      }
+    },
+    "start_window": "background",
+    "windows": {
+      "background": {
+        "file": "files/html/background.html",
+        "desktop_only": false,
+        "transparent": false,
+        "resizable": false,
+        "native_window": false,
+        "show_in_taskbar": false,
+        "is_background_page": true,
+        "background_optimization": true
+      },
+      "main": {
+        "file": "files/html/main.html",
+        "desktop_only": true,
+        "transparent": false,
+        "resizable": false,
+        "native_window": true,
+        "size": {
+          "width": 800,
+          "height": 600
+        },
+        "min_size": {
+          "width": 800, 
+          "height": 600
+        },
+        "start_position": {
+          "left": 0,
+          "top": 0
+        }
+      },
+      "dashboard": {
+        "file": "files/html/dashboard.html",
+        "desktop_only": true,
+        "transparent": false,
+        "resizable": true,
+        "native_window": true,
+        "min_size": {
+          "width": 1024, 
+          "height": 768
+        }
+      },
+      "overlay": {
+          "file": "files/html/overlay.html",
+          "in_game_only": true,
+          "transparent": true,
+          "resizable": false,
+          "native_window": true,
+          "clickthrough": true,
+          "grab_keyboard_focus": false,
+          "size": {
+            "width": 200,
+            "height": 200
+          },
+          "min_size": {
+            "width": 200, 
+            "height": 200
+          }
+      }
+    },
+    "externally_connectable": {
+      "matches": [
+        "https://*.google-analytics.com",
+        "https://*.amazonaws.com",
+        "https://*.doubleclick.net"
+      ]
+    },
+    "extra-objects": {
+      "simple-io-plugin": {
+        "file": "files/plugins/simple-io-plugin.dll",
+        "class": "overwolf.plugins.SimpleIOPlugin"
+      }
+    }
+  }
+}

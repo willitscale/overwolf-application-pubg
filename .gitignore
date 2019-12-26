@@ -1,0 +1,10 @@
+.idea
+dist
+node_modules
+telemetry/*
+matches/*
+player.json
+*.opk
+*.zip
+*.DS_Store
+app

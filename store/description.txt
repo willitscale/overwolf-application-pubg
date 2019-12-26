@@ -1,0 +1,19 @@
+ <h3>PUBGistics - The ultimate PUBG companion!</h3>
+PUBGistics will analyse your previous games to statistically identify you at your best. 
+This app will provide your experience with:
+<ul>
+    <li>Ingame loadout suggestions</li>
+    <li>Real time performance tracking</li>
+    <li>Combat summaries</li>
+    <li>Ingame analytics</li>
+</ul>
+<br>
+<br>
+Downloads and processing of pervious games can be controlled from the settings page as not to impact gameplay, although you will be required to play one full game before your stats can be generated.
+Games will be updated approximately 15 minutes after each match has completed so if your recent gameplay does not appear please be patient.
+<br>
+<br>
+If you have any other suggestions or need some assistance with the application please swing by our discord or visit the support page.
+<br>
+<br>
+Enjoy PUBGistics and we hope it improves your experience!

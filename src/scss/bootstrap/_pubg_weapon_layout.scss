@@ -1,0 +1,88 @@
+.pubg-weapon-text {
+  width: 100%;
+  display: flex;
+  background-color: $fourth;
+  color: white;
+
+  > div {
+    flex-grow: 1;
+    padding: 5px;
+    text-align: right;
+  }
+
+  .pubg-weapon-name {
+    flex-grow: 4;
+    text-align: left;
+  }
+}
+
+.pubg-weapon-layout {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  height: 200px;
+  background-color: $first;
+  margin-bottom: 10px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    z-index: 0;
+    background-image: url("../img/weapon/Item_Weapon_DP28_C.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  > div {
+    position: absolute;
+    width: 11.11%;
+    height: 15%;
+    background-color: #fff2;
+
+    h3 {
+        font-size:10px;
+        color: white;
+        padding: 2px;
+    }
+  }
+
+  .pubg-attachment-muzzle {
+    left: 2%;
+    bottom: 5px;
+  }
+
+  .pubg-attachment-lower {
+    left: 22.22%;
+    bottom: 5px;
+  }
+
+  .pubg-attachment-magazine {
+    left: 44.44%;
+    bottom: 5px;
+  }
+
+  .pubg-attachment-stock {
+    left: 86.88%;
+    bottom: 5px;
+  }
+
+  .pubg-attachment-siderail {
+    left: 72.215%;
+    top: 30px;
+  }
+
+  .pubg-attachment-upper {
+    left: 55.55%;
+    top: 5px;
+    background-image: url("../img/attachments/Item_Attach_Weapon_Upper_Scope3x_C.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}

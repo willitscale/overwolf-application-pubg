@@ -1,0 +1,43 @@
+#tabs-stats-content,
+#tabs-home-content {
+  .row {
+    div {
+      div {
+        height: 35vh;
+      }
+    }
+  }
+}
+
+#tabs-stats-content {
+  .rank-wrapper {
+    text-align: center;
+    .rank-img {
+      height: 60%;
+    }
+    .rank-text {
+      color: $gray-300;
+      small {
+        color: $gray-600;
+      }
+    }
+  }
+
+  .stat-wrapper {
+    h3 {
+      font-size: 1.1em;
+      color: $gray-600;
+      padding-left: 10px;
+      small {
+        color: $gray-300;
+      }
+    }
+  }
+}
+
+.text-box-wrapper {
+    background-color:$gray-100;
+    border: 1px solid $gray-600;
+    padding: 1px 3px;
+    color: $gray-900;
+}

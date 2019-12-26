@@ -1,0 +1,11 @@
+@@include('./components/header.html', {"title": "Overlay", "style": "overlay"})
+
+<body id="overlay-page">
+
+    @@include('./panels/pubg_weapon_layout.html')
+
+    <div class="overlay-stats">
+        <h3 class="kills"><small><i class="fas fa-skull-crossbones"></i></small> <span id="stats-kills">--</span></h3>
+    </div>
+
+    @@include('./components/footer.html', {"page": "overlay"})

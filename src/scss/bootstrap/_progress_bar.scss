@@ -1,0 +1,105 @@
+.progress-wrapper {
+  margin: 40px;
+
+  .progress {
+    position: relative;
+    overflow: visible !important;
+    background-color: $gray-300;
+
+    .progress-dash,
+    .progress-spot {
+      position: absolute;
+    }
+
+    .progress-spot {
+      margin-top: -10px;
+      z-index: 2;
+      height: 40px;
+      width: 40px;
+      border-radius: 25px;
+      background-color: $gray-300;
+      text-align: center;
+      font-size: 2.5em;
+    }
+
+    .progress-dash {
+      z-index: 1;
+      height: 40px;
+      width: 5px;
+      margin-top: -10px;
+      background-color: $gray-600;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .progress {
+      height: 0.4rem;
+      .progress-spot {
+        font-size: 1em;
+        margin-top: -4.5px;
+        height: 17.5px;
+        width: 17.5px;
+      }
+
+      .progress-dash {
+        margin-top: -4.5px;
+        height: 17.5px;
+        width: 2px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .progress {
+      height: 0.8rem;
+      .progress-spot {
+        margin-top: -7.25px;
+        font-size: 1.5em;
+        height: 27.5px;
+        width: 27.5px;
+      }
+
+      .progress-dash {
+        height: 27.5px;
+        width: 3px;
+        margin-top: -7.25px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .progress {
+      height: 1rem;
+      .progress-spot {
+        margin-top: -11.25px;
+        height: 37.5px;
+        width: 37.5px;
+        font-size: 2em;
+      }
+
+      .progress-dash {
+        height: 37.5px;
+        width: 4px;
+        margin-top: -11.25px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1920px) {
+    .progress {
+      height: 1rem;
+      .progress-spot {
+        margin-top: -10px;
+        height: 40px;
+        width: 40px;
+        font-size: 2.5em;
+      }
+
+      .progress-dash {
+        height: 40px;
+        width: 5px;
+        margin-top: -10px;
+      }
+    }
+  }
+}
