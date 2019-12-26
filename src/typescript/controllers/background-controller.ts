@@ -2,7 +2,7 @@ import { Controller } from "./controller";
 import { WindowNames } from "../constants/window-names";
 import { ControllerWrapper } from "./controller-wrapper";
 
-import { RunningGameService } from "../services/running-game-service";
+import { RunningGameUtils } from "../utils/running-game-utils";
 import { PUBGAPIService } from "../services/pubgapi-service";
 import { RosterService } from "../services/roster-service";
 import { GamePhaseService } from "../services/game-phase-service";
@@ -42,7 +42,7 @@ export class BackgroundController extends ControllerWrapper implements Controlle
         let startupWindow = await this.getStartupWindowName();
         await this.restore(startupWindow);
 
-        let isGameRunning = await RunningGameService.instance.isGameRunning();
+        let isGameRunning = await RunningGameUtils.instance.isGameRunning();
 
         if (isGameRunning) {
             await this.startOverlay();
@@ -51,7 +51,7 @@ export class BackgroundController extends ControllerWrapper implements Controlle
             await this.restore(WindowNames.MAIN);
         }
 
-        RunningGameService.instance.addGameRunningChangedListener(this.gameRunningChanged.bind(this));
+        RunningGameUtils.instance.addGameRunningChangedListener(this.gameRunningChanged.bind(this));
         HotkeysUtils.instance.setToggleOverlay(this.toggleOverlay.bind(this));
 
         this.startServices();

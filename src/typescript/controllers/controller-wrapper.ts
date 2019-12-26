@@ -1,6 +1,6 @@
 import { LaunchSourceService } from "../services/launch-source-service";
 import { WindowNames } from "../constants/window-names";
-import { RunningGameService } from "../services/running-game-service";
+import { RunningGameUtils } from "../utils/running-game-utils";
 
 export class ControllerWrapper {
 
@@ -122,7 +122,7 @@ export class ControllerWrapper {
             return WindowNames.BACKGROUND;
         }
 
-        let isGameRunning = await RunningGameService.instance.isGameRunning();
+        let isGameRunning = await RunningGameUtils.instance.isGameRunning();
         if (isGameRunning) {
             return WindowNames.BACKGROUND;
         }

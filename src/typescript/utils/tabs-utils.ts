@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-export class TabsService {
+export class TabsUtils {
 
     private config: any;
 

@@ -2,7 +2,7 @@ import { Controller } from "./controller";
 import { ControllerWrapper } from "./controller-wrapper";
 import { EventBus } from "../services/event-bus";
 import $ from "jquery";
-import { RunningGameService } from "../services/running-game-service";
+import { RunningGameUtils } from "../utils/running-game-utils";
 import { EventNames } from "../constants/event-names";
 import { TopicNames } from "../constants/topic-names";
 
@@ -15,7 +15,7 @@ export class OverlayController extends ControllerWrapper implements Controller {
     public run(): void {
         this.updateOverlay();
         this.register();
-        RunningGameService.instance.addGameRunningChangedListener(this.closeListener.bind(this));
+        RunningGameUtils.instance.addGameRunningChangedListener(this.closeListener.bind(this));
     }
 
     public register(): void {

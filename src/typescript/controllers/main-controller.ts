@@ -1,6 +1,6 @@
 import { Controller } from "./controller";
 import { WindowsUtils } from "../utils/windows-utils";
-import { TabsService } from "../services/tabs-service";
+import { TabsUtils } from "../utils/tabs-utils";
 
 import { HomeTab } from "../tabs/home-tab";
 import { StatsTab } from "../tabs/stats-tab";
@@ -42,7 +42,7 @@ export class MainController implements Controller {
     }
 
     public run(): void {
-        new TabsService(this.tabConfig());
+        new TabsUtils(this.tabConfig());
 
         let topics = [
             TopicNames.Processor,

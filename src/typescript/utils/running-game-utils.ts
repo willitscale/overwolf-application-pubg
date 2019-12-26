@@ -26,7 +26,7 @@ type DimensionChangeEvent = {
   logicalHeight?: any;
 };
 
-export class RunningGameService {
+export class RunningGameUtils {
 
   public gameInfo: GameInformation = {
     gameWidth: 0,
@@ -42,11 +42,11 @@ export class RunningGameService {
     overwolf.games.onGameInfoUpdated.addListener(this._onGameInfoUpdated.bind(this));
   }
 
-  static get instance(): RunningGameService {
-    if (!(<any>overwolf.windows.getMainWindow()).pubgistics_runningGameService) {
-      (<any>overwolf.windows.getMainWindow()).pubgistics_runningGameService = new RunningGameService;
+  static get instance(): RunningGameUtils {
+    if (!(<any>overwolf.windows.getMainWindow()).pubgistics_runningGameUtils) {
+      (<any>overwolf.windows.getMainWindow()).pubgistics_runningGameUtils = new RunningGameUtils;
     }
-    return (<any>overwolf.windows.getMainWindow()).pubgistics_runningGameService;
+    return (<any>overwolf.windows.getMainWindow()).pubgistics_runningGameUtils;
   }
 
   private _onGameInfoUpdated(event: GameInfoUpdatedEvent) {

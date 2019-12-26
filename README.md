@@ -1,5 +1,9 @@
 # PUBGistics Application
 
+## Application Dependencies
+
+![dependencies.png](https://github.com/willitscale/overwolf-application-pubg/blob/master/artwork/dependencies.png?raw=true)
+
 ## Build
 
 Install the gulp client

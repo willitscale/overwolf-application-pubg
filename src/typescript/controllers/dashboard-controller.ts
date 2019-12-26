@@ -9,7 +9,7 @@ import { StatsRepository } from "../repository/stats-repository";
 
 import { DragUtils } from "../utils/drag-utils";
 import { WindowsUtils } from "../utils/windows-utils";
-import { RunningGameService } from "../services/running-game-service";
+import { RunningGameUtils } from "../utils/running-game-utils";
 
 
 import Chartist from "chartist";
@@ -60,7 +60,7 @@ export class DashboardController extends ControllerWrapper implements Controller
     public run(): void {
         EventBus.instance.subscribe('dashboard-controller', TopicNames.TopicWildcard, EventNames.EventWildcard, this.eventListener.bind(this));
         EventBus.instance.publish(TopicNames.Data, EventNames.DataUpdate, {});
-        RunningGameService.instance.addGameRunningChangedListener(this.closeListener.bind(this));
+        RunningGameUtils.instance.addGameRunningChangedListener(this.closeListener.bind(this));
 
         this.drawActivityChart();
         this.setVersion();
