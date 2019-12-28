@@ -35,11 +35,11 @@ export class EventBus {
   public publish(topic: string, event: string, data: any): void {
     //console.log(event, data);
     for (let i in this.subscriptions) {
-      if (TopicNames.TopicWildcard != this.subscriptions[i].topics && topic != this.subscriptions[i].topics && !this.subscriptions[i].topics.includes(topic)) {
+      if (TopicNames.TopicWildcard != this.subscriptions[i].topics && topic != this.subscriptions[i].topics && (typeof this.subscriptions[i].topics !== "string" || !this.subscriptions[i].topics.includes(topic))) {
         continue;
       }
 
-      if (EventNames.EventWildcard != this.subscriptions[i].events && event != this.subscriptions[i].events && !this.subscriptions[i].events.includes(event)) {
+      if (EventNames.EventWildcard != this.subscriptions[i].events && event != this.subscriptions[i].events && (typeof this.subscriptions[i].events !== "string" || !this.subscriptions[i].events.includes(event))) {
         continue;
       }
 
