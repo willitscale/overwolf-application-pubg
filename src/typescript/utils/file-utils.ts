@@ -47,11 +47,11 @@ export class FileUtils {
                 event: EventNames.SettingsSetAll
             },
             'stats.json': {
-                topic: TopicNames.Settings,
+                topic: TopicNames.Stats,
                 event: EventNames.StatsSetAll
             },
             'matches.json': {
-                topic: TopicNames.Settings,
+                topic: TopicNames.Match,
                 event: EventNames.MatchSetAll
             }
         };

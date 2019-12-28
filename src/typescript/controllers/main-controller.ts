@@ -56,7 +56,6 @@ export class MainController implements Controller {
             EventNames.StatsPlayerNameSet,
             EventNames.PUBGAPIPlayerDataSet
         ];
-        
         EventBus.instance.subscribe('main-controller', topics, events, this.eventListener.bind(this));
         this.setupUser();
         this.setMessageOfTheDay();
