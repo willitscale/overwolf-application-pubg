@@ -34,6 +34,7 @@ export class SettingsTab implements Tab {
 
     private listen(): void {
         EventBus.instance.subscribe('settings-tab', TopicNames.Settings, EventNames.SettingsSet, this.eventListener.bind(this));
+        EventBus.instance.publish(TopicNames.Settings, EventNames.SettingsPublish, {});
     }
 
     private eventListener(topic: string, event: string, data: any): void {
