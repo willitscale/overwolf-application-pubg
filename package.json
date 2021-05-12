@@ -13,7 +13,7 @@
     "bootstrap-sass": "^3.4.1",
     "bootstrap-scss": "^4.4.1",
     "browserify": "^16.5.0",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "chartist": "^0.11.4",
     "del": "^5.1.0",
     "fs": "0.0.1-security",
